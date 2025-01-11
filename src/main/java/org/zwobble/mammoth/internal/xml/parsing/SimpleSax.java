@@ -33,8 +33,8 @@ class SimpleSax {
         parserFactory.setNamespaceAware(true);
         try {
             parserFactory.setFeature("http://xml.org/sax/features/external-general-entities", false);
-            parserFactory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
-            parserFactory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
+            //parserFactory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
+            //parserFactory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
             SAXParser saxParser = parserFactory.newSAXParser();
             XMLReader xmlReader = saxParser.getXMLReader();
             xmlReader.setContentHandler(new DefaultHandler() {
